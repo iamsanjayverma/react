@@ -1,11 +1,15 @@
-{"homepage": "https://iamsanjayverma.github.io/react/",
+{
+  "homepage": "https://iamsanjayverma.github.io/react/",
   "name": "react",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "react-scripts start"
+    "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "build": "react-scripts build"
   },
   "author": "",
   "license": "ISC",
@@ -26,5 +30,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.1.0"
   }
 }
