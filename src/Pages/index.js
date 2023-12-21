@@ -11,7 +11,7 @@ function index() {
         <Route index element={<Home />} />
         <Route path="login" element={<Login />} />
         <Route path="contact" element={<Contact />} />
-        <Route path="*" element={<NoPage />} />
+        {/* <Route path="*" element={<NoPage />} /> */}
     </Routes>
   </BrowserRouter>
   )
